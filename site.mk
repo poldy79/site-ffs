@@ -22,19 +22,6 @@ GLUON_SITE_PACKAGES := \
 	iptables \
 	haveged
 
-FOO := \
-
-
-# * opkg_install_cmd: Cannot install package gluon-config-mode-autoupdater.
-# * opkg_install_cmd: Cannot install package gluon-config-mode-contact-info.
-# * opkg_install_cmd: Cannot install package gluon-config-mode-geo-location.
-# * opkg_install_cmd: Cannot install package gluon-config-mode-hostname.
-# * opkg_install_cmd: Cannot install package gluon-config-mode-mesh-vpn.
-# * opkg_install_cmd: Cannot install package gluon-luci-private-wifi.
-# * opkg_install_cmd: Cannot install package gluon-mesh-batman-adv-15.
-
-
-
 DEFAULT_GLUON_RELEASE := 0.1+0-$(shell date '+%Y.%m.%d-%H.%M')-g.$(shell git -C $(GLUONDIR) log --pretty=format:'%h' -n 1)-s.$(shell git -C $(GLUONDIR)/site log --pretty=format:'%h' -n 1)
 
 # Allow overriding the release number from the command line
