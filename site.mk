@@ -23,7 +23,7 @@ GLUON_SITE_PACKAGES := \
 	iptables \
 	iwinfo
 
-DEFAULT_GLUON_RELEASE := 0.3+0-$(shell date '+%Y.%m.%d-%H.%M')-g.$(shell git -C $(GLUONDIR) log --pretty=format:'%h' -n 1)-s.$(shell git -C $(GLUONDIR)/site log --pretty=format:'%h' -n 1)
+DEFAULT_GLUON_RELEASE := 0.4+0-$(shell date '+%Y.%m.%d-%H.%M')-g.$(shell git -C $(GLUONDIR) log --pretty=format:'%h' -n 1)-s.$(shell git -C $(GLUONDIR)/site log --pretty=format:'%h' -n 1)
 
 # Allow overriding the release number from the command line
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
