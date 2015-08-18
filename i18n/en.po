@@ -15,7 +15,7 @@ msgstr ""
 "Welcome the the setup wizard of your new Freifunk Stuttgart node. "
 "Please fill out the following form and transmit it."
 "If you need location data, "
-"you can use our <a href=\"http://gw01.freifunk-stuttgart.de/map\" target=\"_blank\">Map</a>."
+"you can use our <a href=\"http://karte.freifunk-stuttgart.de/\" target=\"_blank\">Map</a>."
 
 
 msgid "gluon-config-mode:pubkey"
