@@ -27,7 +27,7 @@ GLUON_SITE_PACKAGES := \
 	iwinfo
 
 
-DEFAULT_GLUON_RELEASE := 0.6-g.$(shell git -C $(GLUONDIR) log --pretty=format:'%h' -n 1)-s.$(shell git -C $(GLUONDIR)/site log --pretty=format:'%h' -n 1)
+DEFAULT_GLUON_RELEASE := 0.6-$(shell date '+%Y.%m.%d-%H.%M')-g.$(shell git -C $(GLUONDIR) log --pretty=format:'%h' -n 1)-s.$(shell git -C $(GLUONDIR)/site log --pretty=format:'%h' -n 1)
 
 GLUON_LANGS := de en
 
