@@ -34,5 +34,8 @@ GLUON_LANGS := de en
 # Allow overriding the release number from the command line
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
 
+# Region code required for some images; supported values: us eu
+GLUON_REGION ?= eu
+
 # Default priority for updates.
 GLUON_PRIORITY ?= 0.1
