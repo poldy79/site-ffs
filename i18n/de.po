@@ -55,3 +55,10 @@ msgstr ""
 "<small>Hilf uns weitere Anleitungen, Texte, Grafiken, Applikationen, Schaubilder, und ähnliches zu erstellen die wir hier verlinken können, um jedem neuen Freifunker einen guten Start zu ermöglichen</small>"
 
 
+msgid "gluon-config-mode:altitude-label"
+msgstr "Höhe"
+ 
+msgid "gluon-config-mode:altitude-help"
+msgstr ""
+"Die Höhenangabe ist optional und sollte nur gesetzt werden, wenn ein "
+"exakter Wert bekannt ist."
