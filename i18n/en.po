@@ -55,7 +55,4 @@ msgstr ""
 "value is known."
 
 msgid "gluon-config-mode:zip-help"
-"Some nice Text about the ZIP-Code "
-"and how it help for subnetting."
-msgstr ""
-"ZIP-Codes are used to automatically assign your Freifunk-Node to the right Segment."
+msgstr "ZIP-Codes are used to automatically assign your Freifunk-Node to the right Segment."
