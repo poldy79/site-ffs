@@ -65,7 +65,9 @@ msgstr ""
 "exakter Wert bekannt ist."
 
 msgid "gluon-config-mode:zip-help"
-msgstr "Die PLZ hilft dem Freifunk-Knoten automatisch die beste Gegenstelle (Segment) auszuwählen."
+msgstr ""
+"Die PLZ hilft automatisch die richtige Region (Segment) für deinen Freifunk-Knoten auszuwählen. "
+"Dies ist wichtig für das fehlerfreie Meshen mit benachbarten Knoten."
 
 msgid "ZIP-Code"
 msgstr "PLZ"

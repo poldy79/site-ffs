@@ -55,4 +55,6 @@ msgstr ""
 "value is known."
 
 msgid "gluon-config-mode:zip-help"
-msgstr "ZIP-Codes are used to automatically assign your Freifunk-Node to the right Segment."
+msgstr ""
+"ZIP-Codes are used to automatically select the correct region (segment) for your Freifunk-Node. "
+"This is necessary to mesh with nodes in your environment."
