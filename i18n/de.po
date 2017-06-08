@@ -19,10 +19,12 @@ msgstr ""
 
 msgid "gluon-config-mode:pubkey"
 msgstr ""
-"<p>Dies ist der öffentliche Schlüssel deines Freifunk-Knotens. Erst nachdem er auf "
-"den Servern des Stuttgarter Freifunk-Projektes eingetragen wurde "
-"kann sich dein Knoten mit den Mesh-VPNs in Stuttgart verbinden. "
-"Bitte schicke dazu diesen Schlüssel, den Namen deines Knotens (<em><%=escape(hostname)%></em>) und die MAC-Adresse (<em><%=sysconfig.primary_mac%></em>) "
+"<p>Dies ist der öffentliche Schlüssel deines Freifunk-Knotens. "
+"Bitte denke daran den WAN-Port des Freifunkrouters mit einem LAN-Port "
+"Deines Heimrouters zu verbinden. Der Knoten wird sich dann selbständig bei dem Stuttgarter Freifunk-Projekt registrieren. "
+"Dies kann wenige Minuten dauern, bis der Schlüssel von den Gateways akzeptiert wird. "
+"Wenn sich dein Knoten NICHT mit den Mesh-VPNs in Stuttgart verbinden kann, "
+"dann schicke bitte diesen Schlüssel, mit den Namen deines Knotens (<em><%=escape(hostname)%></em>) und die MAC-Adresse (<em><%=sysconfig.primary_mac%></em>) "
 "an <a href=\"mailto:vpn-schluessel@lists.freifunk-stuttgart.net?&amp;subject=Neuer%20Freifunk-Knoten%3A%20<%=urlescape(hostname)%>&amp;body=Name%3A%20<%=urlescape(hostname)%>%0D%0AKey%3A%20<%=pubkey%>%0D%0AMAC%3A%20<%=sysconfig.primary_mac%>%0D%0A\">vpn-schluessel@lists.freifunk-stuttgart.net</a> - "
 "<a href=\"mailto:vpn-schluessel@lists.freifunk-stuttgart.net?&amp;subject=Neuer%20Freifunk-Knoten%3A%20<%=urlescape(hostname)%>&amp;body=Name%3A%20<%=urlescape(hostname)%>%0D%0AKey%3A%20<%=pubkey%>%0D%0AMAC%3A%20<%=sysconfig.primary_mac%>%0D%0A\">Email jetzt absenden</a>. "
 "<small>Ein Klick auf den E-Mail Link müsste&trade; dein E-Mail Programm "
@@ -52,13 +54,23 @@ msgstr ""
 "        <dd>&bull; Stuttgart &mdash; <a href=\"http://[fd21:711::1]/\" target=\"_blank\">fd21:711::1</a></dd>"
 "</dl> "
 "Viel Spaß mit deinem Knoten und bei der Erkundung von Freifunk!<br /> "
-"<small>Hilf uns weitere Anleitungen, Texte, Grafiken, Applikationen, Schaubilder, und ähnliches zu erstellen die wir hier verlinken können, um jedem neuen Freifunker einen guten Start zu ermöglichen</small>"
-
+"<small>Hilf uns weitere Anleitungen, Texte, Grafiken, Applikationen, Schaubilder, und ähnliches zu erstellen die wir hier verlinken können, um jedem neuen Freifunker einen guten Start zu ermöglichen.</small>"
 
 msgid "gluon-config-mode:altitude-label"
 msgstr "Höhe"
- 
+
 msgid "gluon-config-mode:altitude-help"
 msgstr ""
 "Die Höhenangabe ist optional und sollte nur gesetzt werden, wenn ein "
 "exakter Wert bekannt ist."
+
+msgid "gluon-config-mode:zip-help"
+msgstr ""
+"Die PLZ hilft automatisch die richtige Region (Segment) für deinen Freifunk-Knoten auszuwählen. "
+"Dies ist wichtig für das fehlerfreie Meshen mit benachbarten Knoten."
+
+msgid "ZIP-Code"
+msgstr "PLZ"
+
+msgid "e.g. %s"
+msgstr "z.B. %s"
