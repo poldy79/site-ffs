@@ -27,6 +27,7 @@ GLUON_SITE_PACKAGES := \
 	iptables \
 	iwinfo \
 	ffs-set-segment \
+	ffs-watchdog \
 
 # add addition network drivers and usb support only to targes where disk space does not matter.
 ifeq ($(GLUON_TARGET),x86-generic)
