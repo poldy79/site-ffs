@@ -26,6 +26,7 @@ GLUON_SITE_PACKAGES := \
 	iptables \
 	iwinfo \
 	ffs-set-segment \
+	ffs-watchdog \
 
 # add addition network drivers and usb support only to targes where disk space does not matter.
 ifeq ($(GLUON_TARGET),x86-generic)
@@ -45,7 +46,7 @@ GLUON_SITE_PACKAGES += \
 	kmod-igb
 endif
 
-DEFAULT_GLUON_RELEASE := 1.0+$(shell date '+%Y-%m-%d')-g.$(shell git -C $(GLUONDIR) log --pretty=format:'%h' -n 1)-s.$(shell git -C $(GLUONDIR)/site log --pretty=format:'%h' -n 1)
+DEFAULT_GLUON_RELEASE := 1.3+$(shell date '+%Y-%m-%d')-g.$(shell git -C $(GLUONDIR) log --pretty=format:'%h' -n 1)-s.$(shell git -C $(GLUONDIR)/site log --pretty=format:'%h' -n 1)
 
 GLUON_LANGS := de en
 
@@ -59,4 +60,4 @@ GLUON_REGION ?= eu
 GLUON_PRIORITY ?= 0.1
 
 #enable generation of images for ath10k devices with ibss mode
-GLUON_ATH10K_MESH=ibss
+GLUON_ATH10K_MESH ?= 11s
