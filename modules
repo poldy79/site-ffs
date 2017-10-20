@@ -1,4 +1,4 @@
 GLUON_SITE_FEEDS='ffs'
 
 PACKAGES_FFS_REPO=https://github.com/freifunk-stuttgart/Gluon-Packages
-PACKAGES_FFS_COMMIT=c22cea54014470b0b6593ef7dc3170529582e316
+PACKAGES_FFS_COMMIT=1affb647e4ed4f41ece0ec14e52cd5a6dcfea4b5
