@@ -15,6 +15,8 @@ GLUON_SITE_PACKAGES := \
 	gluon-alfred \
 	gluon-respondd \
 	gluon-autoupdater \
+	gluon-mesh-batman-adv-15 \
+	gluon-mesh-vpn-fastd \
 	gluon-config-mode-core \
 	gluon-config-mode-zip \
 	gluon-ebtables-filter-multicast \
