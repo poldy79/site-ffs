@@ -29,6 +29,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-web-autoupdater \
 	gluon-web-wifi-config \
 	gluon-web-private-wifi \
+	gluon-web-mesh-vpn-fastd \
 	gluon-neighbour-info \
 	gluon-mesh-vpn-fastd \
 	gluon-radvd \
