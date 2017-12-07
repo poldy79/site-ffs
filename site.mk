@@ -12,17 +12,25 @@ GLUON_FEATURES := \
 	web-wizard
 
 GLUON_SITE_PACKAGES := \
+	gluon-mesh-batman-adv-15 \
 	gluon-alfred \
 	gluon-respondd \
 	gluon-autoupdater \
-	gluon-mesh-batman-adv-15 \
-	gluon-mesh-vpn-fastd \
+	gluon-config-mode-autoupdater \
+	gluon-config-mode-contact-info \
 	gluon-config-mode-core \
+	gluon-config-mode-geo-location \
+	gluon-config-mode-hostname \
+	gluon-config-mode-mesh-vpn \
 	gluon-config-mode-zip \
 	gluon-ebtables-filter-multicast \
 	gluon-ebtables-filter-ra-dhcp \
+	gluon-web-admin \
+	gluon-web-autoupdater \
+	gluon-web-wifi-config \
 	gluon-web-private-wifi \
 	gluon-neighbour-info \
+	gluon-mesh-vpn-fastd \
 	gluon-radvd \
 	gluon-setup-mode \
 	gluon-status-page \
@@ -30,7 +38,7 @@ GLUON_SITE_PACKAGES := \
 	iptables \
 	iwinfo \
 	ffs-set-segment \
-	ffs-watchdog \
+	ffs-watchdog
 
 # add addition network drivers and usb support only to targes where disk space does not matter.
 ifeq ($(GLUON_TARGET),x86-generic)
