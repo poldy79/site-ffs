@@ -1,24 +1,28 @@
+GLUON_FEATURES := \
+	autoupdater \
+	ebtables-filter-multicast \
+	ebtables-filter-ra-dhcp \
+	mesh-batman-adv-15 \
+	mesh-vpn-fastd \
+	radvd \
+	respondd \
+	alfred \
+	status-page \
+	web-advanced \
+	web-wizard
+
 GLUON_SITE_PACKAGES := \
-	gluon-mesh-batman-adv-15 \
 	gluon-alfred \
 	gluon-respondd \
 	gluon-autoupdater \
-	gluon-config-mode-autoupdater \
-	gluon-config-mode-contact-info \
+	gluon-mesh-batman-adv-15 \
+	gluon-mesh-vpn-fastd \
 	gluon-config-mode-core \
-	gluon-config-mode-geo-location \
-	gluon-config-mode-hostname \
-	gluon-config-mode-mesh-vpn \
 	gluon-config-mode-zip \
 	gluon-ebtables-filter-multicast \
 	gluon-ebtables-filter-ra-dhcp \
-	gluon-luci-admin \
-	gluon-luci-autoupdater \
-	gluon-luci-portconfig \
-	gluon-luci-private-wifi \
-	gluon-luci-wifi-config \
+	gluon-web-private-wifi \
 	gluon-neighbour-info \
-	gluon-mesh-vpn-fastd \
 	gluon-radvd \
 	gluon-setup-mode \
 	gluon-status-page \
@@ -46,7 +50,7 @@ GLUON_SITE_PACKAGES += \
 	kmod-igb
 endif
 
-DEFAULT_GLUON_RELEASE := 1.3+$(shell date '+%Y-%m-%d')-g.$(shell git -C $(GLUONDIR) log --pretty=format:'%h' -n 1)-s.$(shell git -C $(GLUONDIR)/site log --pretty=format:'%h' -n 1)
+DEFAULT_GLUON_RELEASE := 1.4+$(shell date '+%Y-%m-%d')-$(GLUON_RELEASE)-s.$(shell git -C $(GLUON_SITEDIR) log --pretty=format:'%h' -n 1)
 
 GLUON_LANGS := de en
 
