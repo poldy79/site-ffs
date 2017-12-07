@@ -1,3 +1,16 @@
+GLUON_FEATURES := \
+	autoupdater \
+	ebtables-filter-multicast \
+	ebtables-filter-ra-dhcp \
+	mesh-batman-adv-15 \
+	mesh-vpn-fastd \
+	radvd \
+	respondd \
+	alfred \
+	status-page \
+	web-advanced \
+	web-wizard
+
 GLUON_SITE_PACKAGES := \
 	gluon-mesh-batman-adv-15 \
 	gluon-alfred \
@@ -12,11 +25,11 @@ GLUON_SITE_PACKAGES := \
 	gluon-config-mode-zip \
 	gluon-ebtables-filter-multicast \
 	gluon-ebtables-filter-ra-dhcp \
-	gluon-luci-admin \
-	gluon-luci-autoupdater \
-	gluon-luci-portconfig \
-	gluon-luci-private-wifi \
-	gluon-luci-wifi-config \
+	gluon-web-admin \
+	gluon-web-autoupdater \
+	gluon-web-wifi-config \
+	gluon-web-private-wifi \
+	gluon-web-mesh-vpn-fastd \
 	gluon-neighbour-info \
 	gluon-mesh-vpn-fastd \
 	gluon-radvd \
@@ -26,7 +39,7 @@ GLUON_SITE_PACKAGES := \
 	iptables \
 	iwinfo \
 	ffs-set-segment \
-	ffs-watchdog \
+	ffs-watchdog
 
 # add addition network drivers and usb support only to targes where disk space does not matter.
 ifeq ($(GLUON_TARGET),x86-generic)
@@ -46,7 +59,7 @@ GLUON_SITE_PACKAGES += \
 	kmod-igb
 endif
 
-DEFAULT_GLUON_RELEASE := 1.4+$(shell date '+%Y-%m-%d')
+DEFAULT_GLUON_RELEASE := 1.4+$(shell date '+%Y-%m-%d')-g.$(shell git -C $(GLUON_SITEDIR)/../ log --pretty=format:'%h' -n 1)-s.$(shell git -C $(GLUON_SITEDIR) log --pretty=format:'%h' -n 1)
 
 GLUON_LANGS := de en
 
