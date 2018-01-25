@@ -59,7 +59,11 @@ GLUON_SITE_PACKAGES += \
 	kmod-igb
 endif
 
-DEFAULT_GLUON_RELEASE := 1.4+$(shell date '+%Y-%m-%d')-g.$(shell git -C $(GLUON_SITEDIR)/../ log --pretty=format:'%h' -n 1)-s.$(shell git -C $(GLUON_SITEDIR) log --pretty=format:'%h' -n 1)
+DEFAULT_BUILD_DATE := $(shell date '+%Y-%m-%d')
+
+BUILD_DATE ?= $(DEFAULT_BUILD_DATE)
+
+DEFAULT_GLUON_RELEASE := 1.4+$(BUILD_DATE)-g.$(shell git -C $(GLUON_SITEDIR)/../ log --pretty=format:'%h' -n 1)-s.$(shell git -C $(GLUON_SITEDIR) log --pretty=format:'%h' -n 1)
 
 GLUON_LANGS := de en
 
